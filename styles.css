@@ -1,0 +1,88 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.galeria{
+    padding: 20px;
+    margin: 10px;
+    background-color: lightblue;
+    height: calc(100vh - 80px);
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    grid-template-rows: repeat( 3, 1fr);
+    grid-template-areas: 
+    "item1 item2 item3 item3"
+    "item1 item4 item5 item6"
+    "item7 item4 item8 item8";
+}
+
+.media{
+    border: solid 2px black ;
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    filter: grayscale(1);
+    transition: all 0.9s;
+}
+
+.media:hover{
+    filter: grayscale(0);
+    transition: all 0.9s;
+    z-index:+1;
+    box-shadow: 1px white;
+    transform: scale(1.22);
+    box-shadow: 0 0 5px white;
+    border-radius: 10px;
+}
+
+.item1{
+    grid-area: item1;
+    background-size: cover;
+}
+.item2{
+    grid-area: item2;
+    background-size: cover;
+}
+.item3{
+    grid-area: item3;
+    background-size: cover;
+    background-position-y: center ;
+}
+.item4{
+    background-size: cover;
+    background-position: center;
+}
+.item5{
+    grid-area: item5;
+    background-size: cover;
+}
+.item6{
+    grid-area: item6;
+    background-size: cover;
+}
+.item7{
+    grid-area: item7;
+    background-size: cover;
+}
+.item8{
+    grid-area: item8;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 468px){
+    .galeria{
+grid-template-columns: 1fr;
+    grid-template-rows: repeat( 8, 1fr);
+    grid-template-areas: 
+    "item1" 
+    "item2" 
+    "item3"
+    "item4" 
+    "item5" 
+    "item6"
+    "item7"
+    "item8";
+    }
+}
