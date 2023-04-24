@@ -18,6 +18,10 @@
     "item7 item4 item8 item8";
 }
 
+.tamaños{
+    height: 350px;
+    width: 250px;
+}
 .media{
     border: solid 2px black ;
     border-radius: 10px;
@@ -40,35 +44,51 @@
 .item1{
     grid-area: item1;
     background-size: cover;
+    height: 450px;
+    width: 375px;
 }
 .item2{
     grid-area: item2;
     background-size: cover;
+    height: 450px;
+    width: 375px;
 }
 .item3{
     grid-area: item3;
     background-size: cover;
     background-position-y: center ;
+    height: 450px;
+    width: 375px;
 }
 .item4{
     background-size: cover;
     background-position: center;
+    height: 450px;
+    width: 375px;
 }
 .item5{
     grid-area: item5;
     background-size: cover;
+    height: 450px;
+    width: 375px;
 }
 .item6{
     grid-area: item6;
     background-size: cover;
+    height: 450px;
+    width: 375px;
 }
 .item7{
     grid-area: item7;
     background-size: cover;
+    height: 450px;
+    width: 375px;
 }
 .item8{
     grid-area: item8;
     background-size: cover;
+    height: 450px;
+    width: 375px;
 }
 
 @media only screen and (max-width: 468px){
