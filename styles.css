@@ -93,7 +93,7 @@
 
 @media only screen and (max-width: 468px){
     .galeria{
-grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat( 8, 1fr);
     grid-template-areas: 
     "item1" 
@@ -104,5 +104,6 @@ grid-template-columns: 1fr;
     "item6"
     "item7"
     "item8";
+    height: 300vh
     }
 }
